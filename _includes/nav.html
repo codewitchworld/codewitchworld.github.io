@@ -1,0 +1,15 @@
+<nav class="nav">
+    <div>
+        <div class="logo">
+          
+        </div>
+
+        <ul>
+          {% for menu in site.data.menu %}
+          <li>
+            <a href="/{{menu.id}}">{{ menu.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,12 @@
+---
+layout: main
+title: 개발
+main: true
+---
+
+<ul class="catalogue">
+{% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'development' %}
+{% for page in sorted %}
+{% include post-list.html %}
+{% endfor %}
+</ul>
